@@ -9,6 +9,10 @@
  */
 export function formatDate(date: Date): string {
     // 請在此處寫下你的程式碼
+    let year = date.getFullYear()
+    let month = date.getMonth()+1<10? ''+date.getMonth()+1:date.getMonth()+1
+    let Date = date.getDate()<10? '0'+date.getDate():date.getDate()
+    return `${year}-${month}-${Date}`
 }
 
 /**
@@ -22,4 +26,5 @@ export function formatDate(date: Date): string {
  */
 export function roundNumber(num: number): number {
     // 請在此處寫下你的程式碼
+    return Math.round(num)
 }

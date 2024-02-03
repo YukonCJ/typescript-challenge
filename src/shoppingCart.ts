@@ -22,6 +22,11 @@ export function createShoppingCart() {
      */
     function getTotalPrice() {
         // 請在此處寫下你的程式碼
+        let sum :number = 0;
+        items.forEach((item)=> {
+            return sum += item.price
+        })
+        return sum
     }
 
     function getItemCount() {

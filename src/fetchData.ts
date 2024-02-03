@@ -6,4 +6,16 @@
  */
 
 // 請在下方寫下你的程式碼
+type res = {
+    id:number,
+    title?:string,
+}
 
+export function fetchData(url:string): Promise<res>{
+    return new Promise(resolve=>{
+        fetch(url)
+        .then(res => {
+            resolve({id:res.status})
+        })
+    })
+}

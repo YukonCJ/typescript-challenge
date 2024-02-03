@@ -14,4 +14,5 @@
  */
 export function arraySum(numbers: number[]): number {
     // 在此實現函式
+    return numbers.length ===0?0:numbers.reduce((acc,current)=> acc + current)
 }
