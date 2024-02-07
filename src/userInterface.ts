@@ -15,7 +15,9 @@ interface User {
  * 輸入: { firstName: 'John', lastName: 'Doe' }
  * 輸出: 'John Doe'
  */
+
 export function getFullName(user: User): string {
+
     // 在此實現函式
     return `${user.firstName} ${user.lastName}`
 }
