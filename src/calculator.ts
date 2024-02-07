@@ -40,7 +40,7 @@ export function divide(a: number, b: number): number {
         return a/b;
     }else{
         throw new Error("Cannot divide by zero")
-
+    }
 }
 
 /**
