@@ -39,8 +39,8 @@ export function divide(a: number, b: number): number {
     if(a>0 && b>0){
         return a/b;
     }else{
-        throw new Error('Cannot divide by zero')
-
+        throw new Error("Cannot divide by zero")
+    }
 }
 
 /**
